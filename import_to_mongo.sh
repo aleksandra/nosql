@@ -1,9 +1,11 @@
 #!/bin/bash
+#skrypt zapisuje w bazie mongoDB dane z pliku top250movies.json
 
-clear
+
 echo
 if [ "$#" -ne 2 ]
 	then
+		echo "Skrypt zapisuje w podanej bazie ipodanej kolekcji dane z pliku top250movies.json" 
 		echo "Użycie: import_to_mongo.sh nazwa_bazy nazwa_kolekcji"
 		echo
 	elif [ ! -f top250movies.json ] 
